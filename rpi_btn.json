@@ -1,0 +1,33 @@
+{
+
+   "app": {
+   
+   "title": "RPI_BTN",
+   "version": "1.0.0",
+   "supplier": "Open STEMware",
+   "copyright": "bitValence",
+   "url": "https://github.com/cfs-apps/rpi_btn",
+
+   "description": [
+      "Raspberry Pi demo app. It uses the GPIO interface to receive",
+      "push button events." 
+   ],
+
+   "cfs": {
+      "cfe-type": "CFE_APP",
+      "obj-file": "rpi_btn",
+      "entry-symbol": "RPI_BTN_AppMain",
+      "name": "RPI_BTN",
+      "priority": 70,
+      "stack": 32768,
+      "load_addr": 0,
+      "exception-action": 0,
+      "app-framework": "osk",
+      "tables": ["rpi_btn_ini.json"]
+   },
+
+   "requires": ["app_c_fw"]
+
+}}
+
+

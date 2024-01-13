@@ -141,7 +141,6 @@ bool BUTTON_ChildTask(CHILDMGR_Class_t* ChildMgr)
                            "Button pressed, read file value %d", Button->LastRead);
       }
       
-      OS_TaskDelay(50);
       RetStatus = true;
    
    } /* End if connected */
@@ -297,7 +296,7 @@ static bool SetGpioEdge(int GpioPin, const char *Edge)
    else
    {
       CFE_EVS_SendEvent (BUTTON_SET_EDGE_EID, CFE_EVS_EventType_ERROR, 
-                         "Failed to set edge %s to %s", StrBuf, Edge);         
+                         "Failed to set edge %s to '%s'", StrBuf, Edge);         
    }
    
    return RetStatus;

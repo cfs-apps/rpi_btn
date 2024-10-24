@@ -16,7 +16,8 @@
 **    Define Button class
 **
 **  Notes:
-**    None 
+**    1. Code based on "Raspberry Pi And The IoT In C", https://iopress.info/index.php/books/raspberry-pi-iot-in-c
+**       Chapter 8: Advanced Input – Events, Threads, Interrupts
 **
 */
 

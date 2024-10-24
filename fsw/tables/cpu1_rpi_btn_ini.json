@@ -19,7 +19,7 @@
       "CHILD_STACK_SIZE": 16384,
       "CHILD_PRIORITY":   80,
 
-      "BTN_PIN": 4,
+      "BTN_GPIO_PIN": 4,
       "BTN_DEV_STR_DIRECTION": "/sys/class/gpio/gpio%d/direction",
       "BTN_DEV_STR_EDGE":      "/sys/class/gpio/gpio%d/edge",
       "BTN_DEV_STR_EXPORT":    "/sys/class/gpio/export",

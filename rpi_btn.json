@@ -9,8 +9,9 @@
    "url": "https://github.com/cfs-apps/rpi_btn",
 
    "description": [
-      "Raspberry Pi demo app. It uses the GPIO interface to receive",
-      "push button events." 
+      "Raspberry Pi app demonstrating how to interface with a button.",
+      "This app can be used as a starting point for more sophisticated",
+      "apps that service asynchronous inputs." 
    ],
 
    "cfs": {

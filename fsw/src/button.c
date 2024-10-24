@@ -19,8 +19,10 @@
 **    1. The Button obkject owner is responsible for calling the 
 **       BUTTON_Constructor() prior to creating the child task using
 **       BUTTON_ChildTask().
-**    2. TODO: Look for RPI defines for hardcoded strings "both", "in" and "out"
-**    3. TODO: Improve error handling logic
+**    2. Code based on "Raspberry Pi And The IoT In C", https://iopress.info/index.php/books/raspberry-pi-iot-in-c
+**       Chapter 8: Advanced Input – Events, Threads, Interrupts
+**    3. TODO: Look for RPI defines for hardcoded strings "both", "in" and "out"
+**    4. TODO: Improve error handling logic
 **
 */
 
@@ -93,7 +95,7 @@ void BUTTON_Constructor(BUTTON_Class_t *ButtonPtr, INITBL_Class_t *IniTbl)
    
    memset(Button, 0, sizeof(BUTTON_Class_t));
    Button->IniTbl  = IniTbl;
-   Button->GpioPin = INITBL_GetIntConfig(Button->IniTbl, CFG_BTN_PIN);
+   Button->GpioPin = INITBL_GetIntConfig(Button->IniTbl, CFG_BTN_GPIO_PIN);
 
    if (OpenGpio(Button->GpioPin, DIR_IN))
    {

@@ -43,12 +43,12 @@
 ** Versions:
 **
 ** 1.0 - Initial release
-** 3.0 - Compatible with Basecamp 3.x new app version management
+** 3.1 - Compatible with Basecamp 3.x new app version management
 **
 */
 
 #define  RPI_BTN_MAJOR_VER   3
-#define  RPI_BTN_MINOR_VER   0
+#define  RPI_BTN_MINOR_VER   1
 
 
 /******************************************************************************

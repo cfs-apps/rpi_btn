@@ -122,8 +122,8 @@ DECLARE_ENUM(Config,APP_CONFIG)
 ** exceeded so it is the developer's responsibility to verify the ranges. 
 */
 
-#define RPI_BTN_BASE_EID  (APP_C_FW_APP_BASE_EID +  0)
-#define BUTTON_BASE_EID   (APP_C_FW_APP_BASE_EID + 20)
+#define RPI_BTN_BASE_EID  (EdsParam_APP_C_FW_APP_BASE_EID +  0)
+#define BUTTON_BASE_EID   (EdsParam_APP_C_FW_APP_BASE_EID + 20)
 
 
 #endif /* _app_cfg_ */

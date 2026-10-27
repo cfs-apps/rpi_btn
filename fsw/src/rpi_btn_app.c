@@ -205,8 +205,8 @@ static int32 InitApp(void)
       CFE_SB_Subscribe(RpiBtn.OneHzMid, RpiBtn.CmdPipe);
 
       CMDMGR_Constructor(CMDMGR_OBJ);
-      CMDMGR_RegisterFunc(CMDMGR_OBJ, CMDMGR_NOOP_CMD_FC,   NULL, RPI_BTN_NoOpCmd,     0);
-      CMDMGR_RegisterFunc(CMDMGR_OBJ, CMDMGR_RESET_CMD_FC,  NULL, RPI_BTN_ResetAppCmd, 0);
+      CMDMGR_RegisterFunc(CMDMGR_OBJ, EDS_CONTAINER_BTN_LED_NOOP_CC,  NULL, RPI_BTN_NoOpCmd,     0);
+      CMDMGR_RegisterFunc(CMDMGR_OBJ, EDS_CONTAINER_BTN_LED_RESET_CC, NULL, RPI_BTN_ResetAppCmd, 0);
 
       CFE_MSG_Init(CFE_MSG_PTR(RpiBtn.StatusTlm.TelemetryHeader), CFE_SB_ValueToMsgId(INITBL_GetIntConfig(INITBL_OBJ, CFG_RPI_BTN_STATUS_TLM_TOPICID)), sizeof(RPI_BTN_StatusTlm_t));
    

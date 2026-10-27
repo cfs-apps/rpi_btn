@@ -25,7 +25,7 @@
       "load_addr": 0,
       "exception-action": 0,
       "app-framework": "osk",
-      "tables": ["rpi_btn_ini.json"]
+      "json-tables": ["rpi_btn_ini.json"]
    },
 
    "requires": ["app_c_fw"]

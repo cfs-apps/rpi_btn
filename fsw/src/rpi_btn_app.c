@@ -175,7 +175,7 @@ static int32 InitApp(void)
    
       RpiBtn.PerfId    = INITBL_GetIntConfig(INITBL_OBJ, CFG_APP_PERF_ID);
       RpiBtn.CmdMid    = CFE_SB_ValueToMsgId(INITBL_GetIntConfig(INITBL_OBJ, CFG_RPI_BTN_CMD_TOPICID));
-      RpiBtn.OneHzMid  = CFE_SB_ValueToMsgId(INITBL_GetIntConfig(INITBL_OBJ, CFG_BC_SCH_1_HZ_TOPICID));
+      RpiBtn.OneHzMid  = CFE_SB_ValueToMsgId(INITBL_GetIntConfig(INITBL_OBJ, CFG_BC_SCH_1_SEC_TOPICID));
       
       CFE_ES_PerfLogEntry(RpiBtn.PerfId);
 

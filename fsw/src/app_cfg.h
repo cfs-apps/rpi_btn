@@ -44,11 +44,12 @@
 **
 ** 1.0 - Initial release
 ** 3.1 - Compatible with Basecamp 3.x new app version management
+** 4.0 - Updated to cFS 7.0 (Basecamp 4.0 release)
 **
 */
 
-#define  RPI_BTN_MAJOR_VER   3
-#define  RPI_BTN_MINOR_VER   1
+#define  RPI_BTN_MAJOR_VER   4
+#define  RPI_BTN_MINOR_VER   0
 
 
 /******************************************************************************
